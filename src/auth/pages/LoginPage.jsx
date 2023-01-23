@@ -20,7 +20,7 @@ export const LoginPage = () => {
     
     Toast.fire({
       icon: 'success',
-      title: 'Signed in successfully'
+      title: 'Inicio de sesión exitoso'
     })
     navigate('/dashboard')
   }

@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Manto App
 
 Este proyecto fue creado por el empaquetador de React [Create React App](https://github.com/facebook/create-react-app).
 
