@@ -53,7 +53,7 @@ export const SideBar = () => {
           </a>
           <ul className="dropdown-menu dropdown-menu-dark text-small shadow">
             <li>
-              <a href="#" className="dropdown-item">New project</a>
+              <a href="new-project" className="dropdown-item">New project</a>
             </li>
             <li>
               <a href="#" className="dropdown-item">Settings</a>

@@ -1,0 +1,35 @@
+.text-historia{
+    min-height: 200px !important;
+}
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+}
+
+thead th{
+    font-weight: 500 !important;
+    padding-left: 0 !important;
+    padding-bottom: 30px !important;
+    background-color: lightgrey !important;
+    color: rgb(27, 27, 27);
+}
+
+tbody th {
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    padding: 15px !important;
+}
+
+a i{
+    transition: 0.5s;
+}
+a i:hover{
+    filter: brightness(50%) !important;
+}
+
+.btn-save{
+    width: 25% !important;
+    height: 70px !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
