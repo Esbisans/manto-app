@@ -2,6 +2,7 @@ import logo from './assets/electron_icon.png';
 import './styles/App.css';
 import Swal from 'sweetalert2'
 import { useNavigate } from 'react-router-dom';
+import { Table } from '../src/dashboard/components/TableP';
 
 function App() {
 

@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { SideBar } from "../components/SideBar";
+import Table from "../components/TableP";
 import '../styles/datosgenerales.css'
 
 export const DatosGenerales = () => {
@@ -7,7 +8,7 @@ export const DatosGenerales = () => {
     const navigate = useNavigate();
   
     return (
-      <div className="d-flex flex-nowrap" style={{backgroundColor: '#E7E7E7'}}>  
+      <div className="d-flex flex-nowrap" style={{backgroundColor: '#E7E7E7', maxWidth:'100%', overflow: 'auto'}}>  
           <SideBar/>
           <div className="m-4 mt-5" style={{width: '100%'}}>
             <h1 style={{color: '#2D4564'}}>Datos generales</h1>
@@ -28,48 +29,7 @@ export const DatosGenerales = () => {
                 </div>
                 <a className="m-3" href="#"><i className="bi bi-info-circle" style={{fontSize: '19px', color: '#4A6B89'}}></i></a>
                 <div className="m-3" style={{width: '100%'}}>
-                    <div className="d-flex flex-row mb-3 w-100">
-                      <label className="me-3" style={{fontWeight: '600'}}>Nombre del participante</label>
-                      <input className="form-control w-75" type="text" />
-                      <label className="ms-3 me-3" style={{fontWeight: '600'}}>Usuario del participante</label>
-                      <input className="form-control w-75" type="text" />
-                    </div>
-                    <div className="d-flex flex-row mb-3 w-100">
-                      <div className="d-flex flex-row w-75">
-                        <label className="me-3 d-flex" style={{width: '19%',fontWeight: '600'}}>Nombre del participante</label>
-                        <input className="form-control w-100 d-flex" type="text" />
-                      </div>
-                      <div className="d-flex flex-row w-75 ms-3">
-                        <button className="btn btn-primary w-50 h-100" style={{fontWeight: '600'}}>Añadir participante</button>
-                      </div>
-                    </div>
-                    <div className="p-4 mb-3" style={{backgroundColor: 'lightgrey', border: '1px solid gray', borderRadius: '5px'}}>
-                      <h5 className="mb-4">Participantes</h5>
-                      <table class="table table-light">
-                        <thead className="table-title">
-                          <tr className="table-title">
-                            <th>Usuario del participante</th>
-                            <th>Nombre del participante</th>
-                            <th>Rol del participante</th>
-                            <th></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th>Usuario participante 1</th>
-                            <th>Participante 1</th>
-                            <th>Rol del participante 1</th>
-                            <th><a href="#"><i class="bi bi-trash" style={{fontSize: '18px', color: '#4A6B89'}}></i></a></th>
-                          </tr>
-                          <tr>
-                            <th>Usuario participante 2</th>
-                            <th>Participante 2</th>
-                            <th>Rol del participante 2</th>
-                            <th><a href="#"><i class="bi bi-trash" style={{fontSize: '18px', color: '#4A6B89'}}></i></a></th>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                    <Table/>
                 </div>
             </div>
 
@@ -81,7 +41,7 @@ export const DatosGenerales = () => {
                 <div className="m-3" style={{width: '100%'}}>
                     <div className="d-flex flex-row mb-3 w-100">
                       <label className="me-3" style={{fontWeight: '600'}}>URL de archivo</label>
-                      <input className="form-control w-75" type="text" />
+                      <input className="form-control w-75" type="file" />
                       <button className="btn btn-primary w-25 ms-4" style={{fontWeight: '600'}}>Seleccionar archivo</button>
                       <button className="btn btn-primary w-25 ms-4" style={{fontWeight: '600'}}>Cargar archivo</button>
                     </div>
@@ -201,7 +161,7 @@ export const DatosGenerales = () => {
                 </div>
               </div>
             </div>
-            <center><button className="btn btn-primary mt-5 btn-save">Guardar</button></center>
+            <center><button className="btn btn-primary mt-5 mb-3 btn-save">Guardar</button></center>
           </div>
           
           

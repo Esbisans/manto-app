@@ -6,6 +6,10 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
 }
 
+table{
+    overflow-x: auto;
+}
+
 thead th{
     font-weight: 500 !important;
     padding-left: 0 !important;
@@ -17,7 +21,8 @@ thead th{
 tbody th {
     font-weight: 400 !important;
     font-size: 14px !important;
-    padding: 15px !important;
+    padding: 10px !important;
+    max-width: 50%
 }
 
 a i{
