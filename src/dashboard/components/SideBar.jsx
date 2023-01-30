@@ -38,10 +38,10 @@ export const SideBar = () => {
             </a>          
           </li>
           <li>
-            <a href="#" className="nav-link text-white">
+            <a href="/dashboard/generarPdf" className="nav-link text-white">
               {/* <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg> */}
               <FaUsers className="me-2"/>
-              Customers
+              GenerarPDF
             </a>   
           </li>
         </ul>
