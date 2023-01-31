@@ -21,7 +21,7 @@ function DatosPDF() {
             value={texto}
             onChange={(e) => setTexto(e.target.value)}
             ></textarea>
-            <PDFDownloadLink document={<GenerarPDF texto={texto}/>} fileName="ejemplo.pdf">
+            <PDFDownloadLink document={<GenerarPDF texto={texto}/>} fileName="Manual de calidad.pdf">
             <button type="button" class="btn btn-primary">Primary
             Descargar
             </button>
